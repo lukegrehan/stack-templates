@@ -16,6 +16,9 @@ dependencies:
 - base >= 4.7 && < 5
 - ghcid
 
+library:
+  source-dirs: src
+
 executables:
   {{name}}:
     main:                Main.hs
@@ -37,8 +40,6 @@ tests:
     - {{name}}
 
 {-# START_FILE test/Tests.hs #-}
-module Tests where
-
 main :: IO ()
 main = putStrLn "Tests successful"
 
